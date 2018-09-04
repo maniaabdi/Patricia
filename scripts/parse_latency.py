@@ -65,29 +65,29 @@ with open(vanilla_lat_fn, 'r') as vf, open(vanilla_lat_fn2, 'r') as vf2, open(va
 
 
     for v_latl in v_rdr:
-        print(int(v_latl[7].replace('\'', '').split('.')[1]))
+        print(float(v_latl[7].replace('\'', '').split(':')[2]))
         v_lat.append(float(v_latl[7].replace('\'', '').split(':')[2]))
 
     for j_latl in j_rdr:
-        print(int(j_latl[7].replace('\'', '').split('.')[1]))
+        print(float(j_latl[7].replace('\'', '').split(':')[2]))
         j_lat.append(float(j_latl[7].replace('\'', '').split(':')[2]))
 
 
     for v_latl in v_rdr2:
-        print(int(v_latl[7].replace('\'', '').split('.')[1]))
+        print(float(v_latl[7].replace('\'', '').split('.')[1]))
         v_lat2.append(float(v_latl[7].replace('\'', '').split(':')[2]))
     
     for j_latl in j_rdr2:
-        print(int(j_latl[7].replace('\'', '').split('.')[1]))
+        print(float(j_latl[7].replace('\'', '').split('.')[1]))
         j_lat2.append(float(j_latl[7].replace('\'', '').split(':')[2]))
 
 
     for v_latl in v_rdr3:
-        print(int(v_latl[7].replace('\'', '').split('.')[1]))
+        print(float(v_latl[7].replace('\'', '').split('.')[1]))
         v_lat3.append(float(v_latl[7].replace('\'', '').split(':')[2]))
 
     for j_latl in j_rdr3:
-        print(int(j_latl[7].replace('\'', '').split('.')[1]))
+        print(float(j_latl[7].replace('\'', '').split('.')[1]))
         j_lat3.append(float(j_latl[7].replace('\'', '').split(':')[2]))
 
 
